@@ -2,7 +2,7 @@
 
 Send_notification() {
   if [ -z "${MM_WEBHOOK}" ]; then
-    if [ -z "${WEBHOOK_URL} "]; then
+    if [ -z "${WEBHOOK_URL}" ]; then
       echo "NO MATTERMOST WEBHOOK SET"
       echo "Please input your MM_WEBHOOK value either in the settings for this project, or as a parameter for this orb."
       exit 1
