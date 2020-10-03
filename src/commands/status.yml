@@ -54,5 +54,5 @@ steps:
       when: always
       environment:
         WEBHOOK_URL: << parameters.webhook >>
-        IS_WAITING_APPROVAL: false
+        IS_WAITING_APPROVAL: 'false'
       command: <<include(scripts/send_notification.sh)>>

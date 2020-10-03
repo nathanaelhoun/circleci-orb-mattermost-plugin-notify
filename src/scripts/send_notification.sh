@@ -1,11 +1,14 @@
 #!/bin/bash
 
 Send_notification() {
-  if [ -z "${WEBHOOK_URL}" ]; then
-    # Provide error if no webhook is set and error. Otherwise continue
-    echo "NO MATTERMOST WEBHOOK SET"
-    echo "Please input your MM_WEBHOOK value either in the settings for this project, or as a parameter for this orb."
-    exit 1
+  if [ -z "${MM_WEBHOOK}" ]; then
+    if [ -z "${WEBHOOK_URL}" ]; then
+      echo "NO MATTERMOST WEBHOOK SET"
+      echo "Please input your MM_WEBHOOK value either in the settings for this project, or as a parameter for this orb."
+      exit 1
+    else
+      MM_WEBHOOK=${WEBHOOK_URL}
+    fi
   fi
 
   curl -X POST -H 'Content-type: application/json' \
@@ -27,7 +30,7 @@ Send_notification() {
       \"IsFailed\": ${MM_BUILD_IS_FAILED},
       \"IsWaitingApproval\": ${IS_WAITING_APPROVAL},
       \"Message\": \"${MM_MESSAGE}\"
-    }" "${WEBHOOK_URL}"
+    }" "${MM_WEBHOOK}"
 
   echo "Notification sent"
 }
