@@ -1,5 +1,5 @@
 description: |
-  Send a status alert at the end of a job based on success or failure. 
+  Send a status alert at the end of a job based on success or failure.
   This must be the last step in a job
 
 usage:
@@ -18,7 +18,7 @@ usage:
 
         - mattermost-plugin-notify/status:
             webhook: "webhook URL" # Optional: Enter a specific webhook here or the default will use $MM_WEBHOOK
-            success_message: "This is a custom success notification" # Optional: Enter your own message. 
+            success_message: "This is a custom success notification" # Optional: Enter your own message.
             # You can add @username of any user to be mentioned. It can also contains "@channel", "@here" or "@all"
             failure_message: "This is a custom failure notification" # Optional: Enter your own message.
             # You can add @username of any user to be mentioned. It can also contains "@channel", "@here" or "@all"
