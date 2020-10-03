@@ -33,6 +33,6 @@ steps:
       environment:
         WEBHOOK_URL: << parameters.webhook >>
         MM_MESSAGE: << parameters.message >>
-        IS_WAITING_APPROVAL: true
-        MM_BUILD_IS_FAILED: false
+        IS_WAITING_APPROVAL: 'true'
+        MM_BUILD_IS_FAILED: 'false'
       command: <<include(scripts/send_notification.sh)>>
