@@ -56,7 +56,7 @@ workflows:
             - shellcheck/check
       # Publish development version(s) of the orb.
       - orb-tools/publish-dev:
-          orb-name: <namespace>/<orb-name>
+          orb-name: nathanaelhoun/mattermost-plugin-notify
           context: <publishing-context> # A restricted context containing your private publishing credentials. Will only execute if approved by an authorized user.
           requires: [hold-for-dev-publish]
       # Trigger an integration workflow to test the
@@ -83,7 +83,7 @@ workflows:
       # be skipped.
       # e.g. [semver:patch] will cause a patch version to be published.
       - orb-tools/dev-promote-prod-from-commit-subject:
-          orb-name: <namespace>/<orb-name>
+          orb-name: nathanaelhoun/mattermost-plugin-notify
           context: <publishing-context>
           add-pr-comment: false
           fail-if-semver-not-indicated: true
