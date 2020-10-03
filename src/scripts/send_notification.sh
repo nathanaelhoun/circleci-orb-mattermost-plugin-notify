@@ -19,7 +19,6 @@ Send_notification() {
       \"RepositoryURL\": \"${CIRCLE_REPOSITORY_URL}\",
       \"Username\": \"${CIRCLE_USERNAME}\",
       \"WorkflowID\":\"${CIRCLE_WORKFLOW_ID}\", \
-      \"PipelineNumber\": \"${CIRCLE_PIPELINE_NUMBER}\", \
       \"JobName\":\"${CIRCLE_JOB}\", \
       \"CircleBuildNumber\": ${CIRCLE_BUILD_NUM},
       \"CircleBuildURL\": \"${CIRCLE_BUILD_URL}\",
