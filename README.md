@@ -1,40 +1,33 @@
-# circleci-orb-mattermost-plugin-notify
+# CircleCI Orb - Mattermost-plugin-notify
 
-[![CircleCI Build Status](https://circleci.com/gh/nathanaelhoun/circleci-orb-mattermost-plugin-notify.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/nathanaelhoun/circleci-orb-mattermost-plugin-notify) [![CircleCI Orb Version](https://img.shields.io/badge/endpoint.svg?url=https://badges.circleci.io/orb/nathanaelhoun/mattermost-plugin-notify)](https://circleci.com/orbs/registry/orb/nathanaelhoun/mattermost-plugin-notify) [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/nathanaelhoun/circleci-orb-mattermost-plugin-notify/master/LICENSE) [![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
+[![CircleCI Build Status](https://circleci.com/gh/nathanaelhoun/circleci-orb-mattermost-plugin-notify.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/nathanaelhoun/circleci-orb-mattermost-plugin-notify)
+[![CircleCI Orb Version](https://img.shields.io/badge/endpoint.svg?url=https://badges.circleci.io/orb/nathanaelhoun/mattermost-plugin-notify)](https://circleci.com/orbs/registry/orb/nathanaelhoun/mattermost-plugin-notify)
+[![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/nathanaelhoun/circleci-orb-mattermost-plugin-notify/master/LICENSE)
+[![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
+[![Mattermost Community Channel](https://img.shields.io/badge/Mattermost%20Community-~Plugin%3A%20CircleCI-blue)](https://community.mattermost.com/core/channels/plugin-circleci)
 
-## TODO DOC
+Send notifications to the [Mattermost Plugin for CircleCI](https://github.com/nathanaelhoun/mattermost-plugin-circleci).
 
-A starter template for orb projects. Build, test, and publish orbs automatically on CircleCI with [Orb-Tools](https://circleci.com/orbs/registry/orb/circleci/orb-tools).
+## How to use + Features
 
-Additional READMEs are available in each directory.
+[Mattermost-plugin-notify Orb Registry Page](https://circleci.com/orbs/registry/orb/nathanaelhoun/mattermost-plugin-notify) - The official registry page of this orb for all versions, executors, commands, and jobs described.
 
-**Meta**: This repository is open for contributions! Feel free to open a pull request with your changes. Due to the nature of this repository, it is not built on CircleCI. The Resources and How to Contribute sections relate to an orb created with this template, rather than the template itself.
-
-## Resources
-
-[CircleCI Orb Registry Page](https://circleci.com/orbs/registry/orb/nathanaelhoun/mattermost-plugin-notify) - The official registry page of this orb for all versions, executors, commands, and jobs described.
 [CircleCI Orb Docs](https://circleci.com/docs/2.0/orb-intro/#section=configuration) - Docs for using and creating CircleCI Orbs.
+
+## Dependencies / Requirements
+
+### Bash Shell
+
+Because these scripts use bash-specific features, Bash is required. Bash is the default shell used on CircleCI and the Orb will be compatible with most images. If using an Alpine base image, you will need to call apk add bash before calling this Orb, or create a derivative base image that calls RUN apk add bash. If Bash is not available, an error message will be logged and the task will fail.
+
+### cURL
+
+cURL is used to post the Webhook data and must be installed in the container to function properly.
 
 ### How to Contribute
 
-We welcome [issues](https://github.com/nathanaelhoun/circleci-orb-mattermost-plugin-notify/issues) to and [pull requests](https://github.com/nathanaelhoun/circleci-orb-mattermost-plugin-notify/pulls) against this repository!
+[Github Issues](https://github.com/nathanaelhoun/circleci-orb-mattermost-plugin-notify/issues) and [Pull Requests](https://github.com/nathanaelhoun/circleci-orb-mattermost-plugin-notify/pulls) are welcomed in this repository!
 
-### How to Publish
+## License
 
-- Create and push a branch with your new features.
-- When ready to publish a new production version, create a Pull Request from fore _feature branch_ to `master`.
-- The title of the pull request must contain a special semver tag: `[semver:<segement>]` where `<segment>` is replaced by one of the following values.
-
-| Increment | Description                       |
-| --------- | --------------------------------- |
-| major     | Issue a 1.0.0 incremented release |
-| minor     | Issue a x.1.0 incremented release |
-| patch     | Issue a x.x.1 incremented release |
-| skip      | Do not issue a release            |
-
-Example: `[semver:major]`
-
-- Squash and merge. Ensure the semver tag is preserved and entered as a part of the commit message.
-- On merge, after manual approval, the orb will automatically be published to the Orb Registry.
-
-For further questions/comments about this or other orbs, visit the Orb Category of [CircleCI Discuss](https://discuss.circleci.com/c/orbs).
+This repository is under the [MIT License](./LICENSE)

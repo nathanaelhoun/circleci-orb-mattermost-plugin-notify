@@ -1,14 +1,16 @@
+---
 description: Send a notification that a manual approval job is ready
 
 parameters:
   webhook:
     type: string
-    default: ${MM_WEBHOOK}
+    default: ""
     description: Enter either your Webhook URL or use the CircleCI UI
       to add your Webhook URL under the 'MM_WEBHOOK' env var
 
   message:
-    description: Enter custom message
+    description: Enter custom message. You can add @username of any user
+      to be mentioned. It can also contains "@channel", "@here" or "@all"
     type: string
     default: A workflow in CircleCI is awaiting your approval
 
