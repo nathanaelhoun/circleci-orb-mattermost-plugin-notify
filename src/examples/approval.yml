@@ -11,9 +11,8 @@ usage:
     your-workflow:
       jobs:
         - mattermost-plugin-notify/approval-notification:
-            webhook: "webhook URL" # Optional: Enter a specific webhook here or the default will use $MM_WEBHOOK
-            message: "This is a custom message notification" # Optional: Enter your own message.
-            # You can add @username of any user to be mentioned. It can also contains "@channel", "@here" or "@all"
+            webhook: "webhook URL"
+            message: "Please @senior-developer approve this workflow" 
         - approved:
             requires:
               - mattermost-plugin-notify/approval-notification

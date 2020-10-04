@@ -4,8 +4,7 @@ parameters:
   webhook:
     type: string
     default: ""
-    description: Enter either your Webhook URL or use the CircleCI UI
-      to add your Webhook URL under the 'MM_WEBHOOK' env var
+    description: Enter either your Webhook URL or use the CircleCI UI to add your Webhook URL under the 'MM_WEBHOOK' env var
 
   message:
     description: Enter custom message.

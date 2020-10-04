@@ -1,8 +1,7 @@
 version: 2.1
 
 description: |
-  Integrate your CircleCI projects into your Mattermost workflow with notification and the Mattermost CircleCI Plugin.
-  You should have the Mattermost CircleCI Plugin installed on your Mattermost instance and get the Webhook URL to use this orb.
+  Integrate your CircleCI projects into your Mattermost instance with status and approval notifications, using the Mattermost CircleCI Plugin.
 display:
   home_url: https://github.com/nathanaelhoun/mattermost-plugin-circleci
   source_url: https://github.com/nathanaelhoun/circleci-orb-mattermost-plugin-notify
