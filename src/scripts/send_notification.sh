@@ -11,7 +11,7 @@ Send_notification() {
     fi
   fi
 
-  STATUS=$(curl -X POST -H 'Content-type: application/json' \
+  STATUS=$(curl -o /dev/null -s -w "%{http_code}\n" -X POST -H 'Content-type: application/json' \
     --data \
     "{
       \"Organization\": \"${CIRCLE_PROJECT_USERNAME}\",
