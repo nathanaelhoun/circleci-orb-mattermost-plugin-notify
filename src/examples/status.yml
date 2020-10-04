@@ -1,3 +1,4 @@
+---
 description: |
   Send a status alert at the end of a job, based on success or failure.
   This must be the last step in a job.
@@ -13,10 +14,12 @@ usage:
       docker:
         - image: <docker image>
       steps:
-        # With fail_only set to true, no alert will be sent in this example. Change the exit status on the next line to produce an error.
+        # With fail_only set to true, no alert will be sent in this example.
+        # Change the exit status on the next line to produce an error.
         - run: exit 0
 
         - mattermost-plugin-notify/status:
             webhook: "webhook URL"
             success_message: "Life is beautiful, my job has succeeded!"
-            failure_message: "This very important job has failed! Ping @senior-developer"
+            failure_message: "This very important job has failed! Ping
+              @senior-developer"

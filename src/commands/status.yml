@@ -1,6 +1,7 @@
+---
 description: |
-  Send a status alert to Mattermost at the end of a job, based on success or failure.
-  Must be the last step in a job.
+  Send a status alert to Mattermost at the end of a job, based on success or
+  failure. Must be the last step in a job.
 
 parameters:
   webhook:
@@ -12,12 +13,16 @@ parameters:
   success_message:
     type: string
     default: Your CircleCI Job has succeeded
-    description: Enter your custom message for a successed job. You can add @username of any user to be mentioned. It can also contains "@channel", "@here" or "@all"
+    description: Enter your custom message for a successed job. You can add
+      @username of any user to be mentioned. It can also contains "@channel",
+      "@here" or "@all"
 
   failure_message:
     type: string
     default: Your CircleCI Job has failed
-    description: Enter your custom message for a failed job. You can add @username of any user to be mentioned. It can also contains "@channel", "@here" or "@all"
+    description: Enter your custom message for a failed job. You can add
+      @username of any user to be mentioned. It can also contains "@channel",
+      "@here" or "@all"
 
 steps:
   - run:

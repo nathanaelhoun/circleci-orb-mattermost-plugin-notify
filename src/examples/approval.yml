@@ -1,3 +1,4 @@
+---
 description: |
   Notify a Mattermost channel of a pending approval
 
@@ -12,7 +13,7 @@ usage:
       jobs:
         - mattermost-plugin-notify/approval-notification:
             webhook: "webhook URL"
-            message: "Please @senior-developer approve this workflow" 
+            message: "Please @senior-developer approve this workflow"
         - approved:
             requires:
               - mattermost-plugin-notify/approval-notification
