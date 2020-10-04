@@ -11,7 +11,7 @@ Send_notification() {
     fi
   fi
 
-  curl -X POST -H 'Content-type: application/json' \
+  STATUS=$(curl -X POST -H 'Content-type: application/json' \
     --data \
     "{
       \"Organization\": \"${CIRCLE_PROJECT_USERNAME}\",
@@ -29,9 +29,15 @@ Send_notification() {
       \"IsFailed\": ${MM_BUILD_IS_FAILED},
       \"IsWaitingApproval\": ${IS_WAITING_APPROVAL},
       \"Message\": \"${MM_MESSAGE}\"
-    }" "${MM_WEBHOOK}"
+    }" "${MM_WEBHOOK}")
 
-  echo "Notification sent"
+  if [ "$STATUS" -ne "200" ]; then
+    echo "Notification not sent due to an error. Status: $STATUS. Please check the webhook URL"
+    exit 1
+  fi
+
+  echo "Notification sent!"
+  exit 0
 }
 
 Send_notification
