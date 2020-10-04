@@ -1,6 +1,11 @@
-# circleci-orb-mattermost-plugin-notify
+# CircleCI Orb - Mattermost-plugin-notify
 
-[![CircleCI Build Status](https://circleci.com/gh/nathanaelhoun/circleci-orb-mattermost-plugin-notify.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/nathanaelhoun/circleci-orb-mattermost-plugin-notify) [![CircleCI Orb Version](https://img.shields.io/badge/endpoint.svg?url=https://badges.circleci.io/orb/nathanaelhoun/mattermost-plugin-notify)](https://circleci.com/orbs/registry/orb/nathanaelhoun/mattermost-plugin-notify) [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/nathanaelhoun/circleci-orb-mattermost-plugin-notify/master/LICENSE) [![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
+[![CircleCI Build Status](https://circleci.com/gh/nathanaelhoun/circleci-orb-mattermost-plugin-notify.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/nathanaelhoun/circleci-orb-mattermost-plugin-notify)
+[![CircleCI Orb Version](https://img.shields.io/badge/endpoint.svg?url=https://badges.circleci.io/orb/nathanaelhoun/mattermost-plugin-notify)](https://circleci.com/orbs/registry/orb/nathanaelhoun/mattermost-plugin-notify) 
+[![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/nathanaelhoun/circleci-orb-mattermost-plugin-notify/master/LICENSE) 
+[![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
+[![Mattermost Community Channel](https://img.shields.io/badge/Mattermost%20Community-~Plugin%3A%20CircleCI-blue)](https://community.mattermost.com/core/channels/plugin-circleci)
+
 
 ## TODO DOC
 
