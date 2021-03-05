@@ -6,13 +6,15 @@
 [![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
 [![Mattermost Community Channel](https://img.shields.io/badge/Mattermost%20Community-~Plugin%3A%20CircleCI-blue)](https://community.mattermost.com/core/channels/plugin-circleci)
 
-Send notifications to the [Mattermost Plugin for CircleCI](https://github.com/nathanaelhoun/mattermost-plugin-circleci).
+Send notifications to the [Mattermost Plugin for CircleCI](https://github.com/mattermost/mattermost-plugin-circleci).
 
 ## How to use + Features
 
 [Mattermost-plugin-notify Orb Registry Page](https://circleci.com/orbs/registry/orb/nathanaelhoun/mattermost-plugin-notify) - The official registry page of this orb for all versions, executors, commands, and jobs described.
 
 [CircleCI Orb Docs](https://circleci.com/docs/2.0/orb-intro/#section=configuration) - Docs for using and creating CircleCI Orbs.
+
+[Mattermost Plugin Docs](https://mattermost.gitbook.io/circle-ci-plugin/user-guide/webhooks-notifications) - To setup and use the corresponding Mattermost Plugin.
 
 ## Dependencies / Requirements
 
